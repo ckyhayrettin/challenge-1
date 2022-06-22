@@ -1,0 +1,214 @@
+:root {
+  --clr-orange: #fb7413;
+  --clr-white: #ffffff;
+  --clr-Light-Grey: #959eac;
+  --clr-Medium-Grey: #7c8798;
+  --Dark-Blue: #252d37;
+  --Very-Dark-Blue: #121417;
+  --Font-size: 15px;
+  --font: 'Overpass', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: var(--Very-Dark-Blue);
+  font-family: var(--Font-size);
+}
+
+body .section {
+  width: 20rem;
+  height: 60vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  background-color: var(--Dark-Blue);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+body .section form {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .section form .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: var(--clr-Medium-Grey);
+  border-radius: 50%;
+  padding: 20px;
+}
+
+body .section form .title {
+  color: var(--clr-white);
+}
+
+body .section form .text {
+  color: var(--clr-white);
+  text-align: center;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+body .section form .number {
+  width: 100%;
+}
+
+body .section form .number ul {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .section form .number ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  background-color: var(--clr-Medium-Grey);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body .section form .number ul li:hover {
+  background-color: var(--clr-orange);
+}
+
+body .section form .number ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--clr-white);
+}
+
+body .section form .btn {
+  background-color: var(--clr-orange);
+  color: var(--clr-white);
+  width: 100%;
+  border: none;
+  height: 2.5rem;
+  text-transform: uppercase;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+body .section form .btn:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-orange);
+}
+
+body .show {
+  display: none;
+}
+
+.show-value {
+  display: block;
+  width: 20rem;
+  height: 60vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  background-color: var(--Dark-Blue);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.show-value .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.show-value .container .close-btn {
+  color: var(--clr-orange);
+  background-color: var(--clr-Medium-Grey);
+  width: 60%;
+  border: none;
+  height: 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.show-value .container .close-btn .number-value {
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+}
+
+.show-value .container .container-title {
+  color: var(--clr-white);
+}
+
+.show-value .container .container-text {
+  color: var(--clr-white);
+  text-align: center;
+}
+
+.of-value {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
